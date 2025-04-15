@@ -50,4 +50,19 @@ aside {
   .content img {
     max-width: 40%; }
 
+#nuage_info {
+  padding: 160px 160px 24px 36px;
+  background: url("./img/nuage_clip.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  #nuage_info h3 {
+    font-family: "Itim", Arial, sans-serif;
+    color: #4B8DCA; }
+  #nuage_info img {
+    max-height: 48px; }
+
 /*# sourceMappingURL=styles.css.map */

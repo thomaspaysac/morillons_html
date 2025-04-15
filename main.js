@@ -63,4 +63,7 @@ function translateHomepage () {
 
   const HOME_MESSAGE = document.getElementById("home_parents-message");
   HOME_MESSAGE.innerHTML = "To register youor child, please contact the <a href='https://www.geneve.ch/demarches/demande-place-creche'>Early Childhood Information Office (BIPE) of the City of Geneva</a>";
+
+  const CONTACTS = document.getElementById("contacts");
+  CONTACTS.textContent = "Contacts";
 }
