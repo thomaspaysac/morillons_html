@@ -6,7 +6,7 @@
   <script src="./main.js" defer></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
-  <title>Accueil - Crèche des Morillons</title>
+  <title>Crèche des Morillons</title>
 </head>
 <body>
   <header class="flex px-16 py-4 items-center text-white justify-between">
@@ -37,12 +37,12 @@
     <aside class="bg-cover bg-center"></aside>
     <div class="content p-12 flex flex-col justify-between">
       <div class="flex flex-col gap-4">
-        <h1 class="text-5xl">Bienvenue à la <br/>Crèche des Morillons</h1>
-        <h2 class="text-2xl">Une institution subventionnée par <br/>la Ville de Genève</h2>
+        <h1 id="home_welcome" class="text-5xl">Bienvenue à la <br/>Crèche des Morillons</h1>
+        <h2 id="home_header2" class="text-2xl">Une institution subventionnée par <br/>la Ville de Genève</h2>
       </div>
       <div class="flex flex-col gap-4">
         <div class="cta p-4 text-2xl rounded-md">
-          Pour toute demande d'inscription, veuillez contacter le <a href="https://www.geneve.ch/demarches/demande-place-creche">Bureau d'information petite enfance de la Ville de Genève</a>
+          <span id="home_parents-message">Pour toute demande d'inscription, veuillez contacter le <a href="https://www.geneve.ch/demarches/demande-place-creche">Bureau d'information petite enfance de la Ville de Genève</a></span>
           <img src="./img/icons/external-link.png" alt="link">
         </div>
         <img src="./img/logo_vdg.png" alt="ville de genève" class="self-end">
