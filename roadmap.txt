@@ -1,4 +1,2 @@
-- Bulle avec infos
-- Traduction
 - Liens vers autres pages ("page en construction") pour démo
 - responsive design
