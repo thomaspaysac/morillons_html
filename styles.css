@@ -19,36 +19,34 @@ header {
     cursor: pointer; }
 
 .navbar img {
-  max-height: 88px; }
+  max-height: 88px;
+  max-width: 88px; }
 
 main {
   min-height: calc(100vh - 120px); }
 
 aside {
-  width: 60%;
   background-image: url("./img/batiment.jpg"); }
 
-.content {
-  width: 40%; }
-  .content h1 {
-    font-family: "Itim", Arial, sans-serif;
-    color: #4B8DCA;
-    line-height: 1.2; }
-  .content .cta {
-    background-color: #4B8DCA;
-    color: #ffffff;
-    vertical-align: middle; }
-    .content .cta a {
-      text-decoration: underline;
-      text-decoration-thickness: 1.2px;
-      text-underline-offset: 4px; }
-      .content .cta a:hover {
-        text-shadow: 0 0 4px #ffffff; }
-    .content .cta img {
-      display: inline;
-      max-height: 16px; }
-  .content img {
-    max-width: 40%; }
+.content h1 {
+  font-family: "Itim", Arial, sans-serif;
+  color: #4B8DCA;
+  line-height: 1.2; }
+.content .cta {
+  background-color: #4B8DCA;
+  color: #ffffff;
+  vertical-align: middle; }
+  .content .cta a {
+    text-decoration: underline;
+    text-decoration-thickness: 1.2px;
+    text-underline-offset: 4px; }
+    .content .cta a:hover {
+      text-shadow: 0 0 4px #ffffff; }
+  .content .cta img {
+    display: inline;
+    max-height: 16px; }
+.content img {
+  max-width: 40%; }
 
 #nuage_info {
   padding: 160px 160px 24px 36px;

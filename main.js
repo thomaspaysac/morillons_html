@@ -56,10 +56,10 @@ function translateHeader () {
 
 function translateHomepage () {
   const HOME_WELCOME = document.getElementById("home_welcome");
-  HOME_WELCOME.innerHTML = "Welcome to <br/>Crèche des Morillons";
+  HOME_WELCOME.innerHTML = "Welcome to Crèche des Morillons";
 
   const HOME_HEADER_2 = document.getElementById("home_header2");
-  HOME_HEADER_2.innerHTML = "An institution subsidized by <br/>the City of Geneva";
+  HOME_HEADER_2.innerHTML = "A day care subsidized by the City of Geneva";
 
   const HOME_MESSAGE = document.getElementById("home_parents-message");
   HOME_MESSAGE.innerHTML = "To register your child, please contact the <a href='https://www.geneve.ch/demarches/demande-place-creche'>Early Childhood Information Office (BIPE) of the City of Geneva</a>";

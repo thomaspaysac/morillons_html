@@ -31,6 +31,7 @@ header {
 .navbar {
   img {
     max-height: 88px;
+    max-width: 88px;
   }
 }
 
@@ -40,12 +41,12 @@ main {
 }
 
 aside {
-  width: 60%;
+  //width: 60%;
   background-image: url("./img/batiment.jpg");
 }
 
 .content {
-  width: 40%;
+  //width: 40%;
 
   h1 {
     font-family: "Itim", Arial, sans-serif;
