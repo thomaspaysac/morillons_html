@@ -48,15 +48,29 @@ aside {
 .content {
   //width: 40%;
 
+  @media (width <= 766px) { 
+    .homepage_headers {
+      background-image: url("./img/batiment.jpg");
+
+    .homepage-headers_container {
+      background-color: #ffffffbb;
+    }
+    }
+  }
+
   h1 {
     font-family: "Itim", Arial, sans-serif;
     color: #4B8DCA;
     line-height: 1.2;
   }
 
+  @media (width > 766px) {
+    .cta {
+      background-color: #4B8DCA;
+      color: #ffffff;
+    }
+  }
   .cta {
-    background-color: #4B8DCA;
-    color: #ffffff;
     vertical-align: middle;
 
     a {
