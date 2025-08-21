@@ -41,7 +41,7 @@ aside {
 
 @media (width <= 766px) {
   .content .homepage_headers {
-    background-image: url("./img/batiment.jpg"); }
+    background-image: none; }
     .content .homepage_headers .homepage-headers_container {
       background-color: #ffffffdd; } }
 .content h1 {
@@ -84,6 +84,9 @@ aside {
 #info_mobile {
   background-color: #4B8DCA;
   color: #ffffff; }
+  #info_mobile img {
+    max-height: 40px;
+    max-width: 40px; }
   @media (width <= 766px) {
     #info_mobile img {
       max-height: 20px;
