@@ -64,15 +64,24 @@ EN_BUTTON.addEventListener("click", () => {
 function translateHeader () {
   const HOME_NAV_BUTTON = document.getElementById("home__nav-button");
   HOME_NAV_BUTTON.textContent = "Home";
+  const HOME_SIDEBAR_BUTTON = document.getElementById("home__sidebar");
+  HOME_SIDEBAR_BUTTON.textContent = "Home";
+
   
   const GROUPS_NAV_BUTTON = document.getElementById("groups__nav-button");
   GROUPS_NAV_BUTTON.textContent = "Groups";
+  const GROUPS_SIDEBAR_BUTTON = document.getElementById("groups__sidebar");
+  GROUPS_SIDEBAR_BUTTON.textContent = "Groups";
   
   const TEAM_NAV_BUTTON = document.getElementById("team__nav-button");
   TEAM_NAV_BUTTON.textContent = "Team";
+  const TEAM_SIDEBAR_BUTTON = document.getElementById("team__sidebar");
+  TEAM_SIDEBAR_BUTTON.textContent = "Team";
   
   const PARENTS_NAV_BUTTON = document.getElementById("familles__nav-button");
-  PARENTS_NAV_BUTTON.textContent = "Families"; 
+  PARENTS_NAV_BUTTON.textContent = "Families";
+  const PARENTS_SIDEBAR_BUTTON = document.getElementById("familles__sidebar");
+  PARENTS_SIDEBAR_BUTTON.textContent = "Families"; 
 }
 
 function translateHomepage () {
