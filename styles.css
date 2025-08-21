@@ -98,4 +98,14 @@ aside {
       max-height: 20px;
       max-width: 20px; } }
 
+.mobile-sidebar {
+  margin-top: 92px;
+  color: #4B8DCA;
+  box-shadow: 3px 0 3px #4B8DCA inset;
+  transform: translateX(100%);
+  transition: transform 300ms ease-out; }
+
+.open-sidebar {
+  transform: translateX(0); }
+
 /*# sourceMappingURL=styles.css.map */

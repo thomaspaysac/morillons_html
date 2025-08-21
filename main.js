@@ -1,3 +1,27 @@
+// Dropdown
+let dropdown_open = false;
+
+const OPEN_NAV_BUTTON = document.getElementById("mobile-nav__open");
+const MOBILE_SIDEBAR =  document.getElementsByClassName("mobile-sidebar")[0];
+OPEN_NAV_BUTTON.addEventListener("click", () => {
+  dropdown_open = !dropdown_open;
+  animateSidebar(dropdown_open);
+});
+
+function animateSidebar (status) {
+  /*if (status) {
+    MOBILE_SIDEBAR.classList.add("open-sidebar");
+  } else {
+    console.log('false')
+  }*/
+ MOBILE_SIDEBAR.classList.toggle("open-sidebar");
+}
+
+
+
+
+
+
 // Get current language from session storage, set to FR if null
 (function setDefaultLang () {
   if (!sessionStorage.getItem("lang")) {
@@ -36,9 +60,6 @@ EN_BUTTON.addEventListener("click", () => {
 
 
 
-
-
-
 // TRANSLATION FUNCTIONS
 function translateHeader () {
   const HOME_NAV_BUTTON = document.getElementById("home__nav-button");
@@ -50,8 +71,8 @@ function translateHeader () {
   const TEAM_NAV_BUTTON = document.getElementById("team__nav-button");
   TEAM_NAV_BUTTON.textContent = "Team";
   
-  const PARENTS_NAV_BUTTON = document.getElementById("parents__nav-button");
-  PARENTS_NAV_BUTTON.textContent = "Parents"; 
+  const PARENTS_NAV_BUTTON = document.getElementById("familles__nav-button");
+  PARENTS_NAV_BUTTON.textContent = "Families"; 
 }
 
 function translateHomepage () {

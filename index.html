@@ -9,7 +9,7 @@
   <title>Crèche des Morillons</title>
 </head>
 <body>
-  <header class="flex p-4 md:px-16 items-center text-white justify-between fixed top-0 w-full">
+  <header class="flex p-4 md:px-16 items-center text-white justify-between fixed z-50 top-0 w-full">
     <nav class="navbar w-full flex items-center justify-between gap-8 md:gap-4 lg:gap-8 lg:flex-row md:flex-col">
       <img src="./img/logo_transparent.png" class="img_logo md:hidden" alt="logo">
       <img src="./img/logo_transparent.png" class="img_logo_md hidden md:block self-center" alt="logo">
@@ -18,7 +18,7 @@
           <li id="home__nav-button">Présentation</li>
           <li id="groups__nav-button">Les groupes</li>
           <li id="team__nav-button">L'équipe</li>
-          <li id="parents__nav-button">Espace parents</li>
+          <li id="familles__nav-button">Espace familles</li>
         </ul>
         <div class="flex items-center ml-auto">
           <ul class="flex ml-auto gap-8 md:gap-4">
@@ -76,5 +76,14 @@
       <li class="flex items-center gap-2"> <img src="./img/icons/lieu_blanc.png" alt="adresse"><a target="_blank" href="https://maps.app.goo.gl/tZbyRAxoSu6myzzm9">Chemin du Pommier 43, 1218 Le Grand-Saconnex</a></li>
     </ul>
   </div>
+
+  <nav class="mobile-sidebar fixed z-30 top-0 bg-white h-full w-full p-4">
+    <div class="flex flex-col gap-2 text-2xl">
+      <a href="./index.html">Présentation</a>
+      <a>Les groupes</a>
+      <a>L'équipe</a>
+      <a>Espace familles</a>
+    </div>
+  </nav>
 </body>
 </html>
