@@ -48,6 +48,22 @@ EN_BUTTON.addEventListener("click", () => {
   }
 });
 
+// Language change buttons in sidebar
+const FR_BUTTON_SIDEBAR = document.getElementById("change_lang__fr_sidebar");
+FR_BUTTON_SIDEBAR.addEventListener("click", () => {
+  if (sessionStorage.getItem("lang") !== "fr") {
+    sessionStorage.setItem("lang", "fr");
+    location.reload();
+  }
+});
+
+const EN_BUTTON_SIDEBAR = document.getElementById("change_lang__en_sidebar");
+EN_BUTTON_SIDEBAR.addEventListener("click", () => {
+  if (sessionStorage.getItem("lang") !== "en") {
+  sessionStorage.setItem("lang", "en");
+  location.reload();
+  }
+});
 
 // If language is set to french, display HTML. Else, translate DOM
 (function translateDOM () {
