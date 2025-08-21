@@ -34,7 +34,8 @@ main {
       margin-top: 182px; } }
   @media (width < 766px) {
     main {
-      margin-top: 92px; } }
+      margin-top: 92px;
+      margin-bottom: 104px; } }
 
 aside {
   background-image: url("./img/batiment.jpg"); }
@@ -65,6 +66,11 @@ aside {
     max-height: 16px; }
 .content img {
   max-width: 40%; }
+
+.mobile-image {
+  background-image: url("./img/batiment.jpg");
+  background-size: cover;
+  background-position: center; }
 
 #nuage_info {
   padding: 160px 160px 24px 36px;
