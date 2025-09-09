@@ -1,2 +1,0 @@
-- Liens vers autres pages ("page en construction") pour démo
-- responsive design : menu

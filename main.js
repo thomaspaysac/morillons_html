@@ -80,6 +80,7 @@ function translateHeader () {
 
 function translateHomepage () {
   const HOME_WELCOME = document.getElementById("home_welcome");
+  // Check if user is on homepage
   if (HOME_WELCOME) {
     HOME_WELCOME.innerHTML = "Welcome to Crèche des Morillons";
 
