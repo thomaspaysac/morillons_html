@@ -1,19 +1,3 @@
-// Dropdown
-let sidebar_open = false;
-
-const OPEN_NAV_BUTTON = document.getElementById("mobile-nav__open");
-const MOBILE_SIDEBAR =  document.getElementsByClassName("mobile-sidebar")[0];
-const MOBILE_NAV_ICON = document.getElementById("mobile-nav__icon");
-
-OPEN_NAV_BUTTON.addEventListener("click", () => {
-  MOBILE_SIDEBAR.classList.toggle("open-sidebar");
-  sidebar_open = !sidebar_open;
-  changeSidebarIcon(sidebar_open);
-});
-
-function changeSidebarIcon (sidebarStatus) {
-  sidebarStatus ? MOBILE_NAV_ICON.src = "./img/icons/close_menu.png" : MOBILE_NAV_ICON.src = "./img/icons/menu.png";
-}
 
 
 // Get current language from session storage, set to FR if null
@@ -96,14 +80,16 @@ function translateHeader () {
 
 function translateHomepage () {
   const HOME_WELCOME = document.getElementById("home_welcome");
-  HOME_WELCOME.innerHTML = "Welcome to Crèche des Morillons";
+  if (HOME_WELCOME) {
+    HOME_WELCOME.innerHTML = "Welcome to Crèche des Morillons";
 
-  const HOME_HEADER_2 = document.getElementById("home_header2");
-  HOME_HEADER_2.innerHTML = "A day care subsidized by the City of Geneva";
+    const HOME_HEADER_2 = document.getElementById("home_header2");
+    HOME_HEADER_2.innerHTML = "A day care subsidized by the City of Geneva";
 
-  const HOME_MESSAGE = document.getElementById("home_parents-message");
-  HOME_MESSAGE.innerHTML = "To register your child, please contact the <a href='https://www.geneve.ch/demarches/demande-place-creche'>Early Childhood Information Office (BIPE) of the City of Geneva</a>";
+    const HOME_MESSAGE = document.getElementById("home_parents-message");
+    HOME_MESSAGE.innerHTML = "To register your child, please contact the <a href='https://www.geneve.ch/demarches/demande-place-creche'>Early Childhood Information Office (BIPE) of the City of Geneva</a>";
 
-  const CONTACTS = document.getElementById("contacts");
-  CONTACTS.textContent = "Contacts";
+    const CONTACTS = document.getElementById("contacts");
+    CONTACTS.textContent = "Contacts";
+  }
 }

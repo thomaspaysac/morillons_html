@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./main.js" defer></script>
+  <script src="./navbar.js" defer></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
   <title>Crèche des Morillons</title>
@@ -15,10 +16,10 @@
       <img src="./img/logo_transparent.png" class="img_logo_md hidden md:block self-center" alt="logo">
       <div class="hidden md:flex w-full">
         <ul class="flex gap-8 items-center text-xl">
-          <li id="home__nav-button">Présentation</li>
-          <li id="groups__nav-button">Les groupes</li>
-          <li id="team__nav-button">L'équipe</li>
-          <li id="familles__nav-button">Espace familles</li>
+          <a href="./index.html" id="home__nav-button">Accueil</a>
+          <a href="./groupes.html" id="groups__nav-button">Les groupes</a>
+          <a href="./equipe.html" id="team__nav-button">L'équipe</a>
+          <a href="./familles.html" id="familles__nav-button">Espace familles</a>
         </ul>
         <div class="flex items-center ml-auto">
           <ul class="flex ml-auto gap-8 md:gap-4">
@@ -53,7 +54,7 @@
       </div>
       <div class="flex flex-col gap-4">
         <div class="cta p-4 text-lg md:text-2xl rounded-md">
-          <span id="home_parents-message">Pour toute demande d'inscription, veuillez contacter le <a href="https://www.geneve.ch/demarches/demande-place-creche">Bureau d'information petite enfance de la Ville de Genève</a></span>
+          <span id="home_parents-message">Pour toute demande d'inscription, veuillez contacter le <a href="https://www.geneve.ch/demarches/demande-place-creche" target="_blank">Bureau d'information petite enfance de la Ville de Genève</a></span>
           <img src="./img/icons/external-link.png" alt="link">
         </div>
         <img src="./img/logo_vdg.png" alt="ville de genève" class="self-end px-4 md:px-0">
@@ -79,10 +80,10 @@
 
   <nav class="mobile-sidebar fixed z-30 top-0 bg-white h-full w-full p-4">
     <ul class="flex flex-col gap-2 text-3xl">
-      <li id="home__sidebar"><a href="./index.html">Présentation</a></li>
-      <li id="groups__sidebar">Les groupes</li>
-      <li id="team__sidebar">L'équipe</li>
-      <li id="familles__sidebar">Espace familles</li>
+      <a href="./index.html" id="home__sidebar">Accueil</a>
+      <a href="./groupes.html" id="groups__sidebar">Les groupes</a>
+      <li id="team__sidebar"><a href="./equipe.html">L'équipe</a></li>
+      <li id="familles__sidebar"><a href="./familles.html">Espace familles</a></li>
     </ul>
     <div class="mt-8">
       <ul class="flex gap-4">

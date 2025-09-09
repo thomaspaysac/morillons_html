@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./main.js" defer></script>
+  <script src="./navbar.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+  <title>Crèche des Morillons - Equipe</title>
+</head>
+<body>
+  <header class="flex p-4 md:px-16 items-center text-white justify-between fixed z-50 top-0 w-full">
+    <nav class="navbar w-full flex items-center justify-between gap-8 md:gap-4 lg:gap-8 lg:flex-row md:flex-col">
+      <img src="./img/logo_transparent.png" class="img_logo md:hidden" alt="logo">
+      <img src="./img/logo_transparent.png" class="img_logo_md hidden md:block self-center" alt="logo">
+      <div class="hidden md:flex w-full">
+        <ul class="flex gap-8 items-center text-xl">
+          <a href="./index.html" id="home__nav-button">Accueil</a>
+          <a href="./groupes.html" id="groups__nav-button">Les groupes</a>
+          <a href="./equipe.html" id="team__nav-button">L'équipe</a>
+          <a href="./familles.html" id="familles__nav-button">Espace familles</a>
+        </ul>
+        <div class="flex items-center ml-auto">
+          <ul class="flex ml-auto gap-8 md:gap-4">
+            <button id="change_lang__fr" class="flex items-center gap-2">
+              <img src="./img/icons/france.png"  class="h-6" alt="french">
+              FR
+            </button>
+            <button id="change_lang__en" class="flex items-center gap-2">
+              <img src="./img/icons/united-kingdom.png" class="h-6" alt="english">
+              EN
+            </button>
+          </ul>
+        </div>
+      </div>
+      <button id="mobile-nav__open">
+        <img id="mobile-nav__icon" src="./img/icons/menu.png" alt="mobile menu" class="block p-3 md:hidden" />
+      </button>
+    </nav>
+  </header>
+
+    <main class="flex items-center justify-center h-24">
+      <h1 class="text-2xl">Page en construction...</h1>
+    </main>
+
+      <nav class="mobile-sidebar fixed z-30 top-0 bg-white h-full w-full p-4">
+    <ul class="flex flex-col gap-2 text-3xl">
+      <li id="home__sidebar"><a href="./index.html">Présentation</a></li>
+      <li id="groups__sidebar">Les groupes</li>
+      <li id="team__sidebar">L'équipe</li>
+      <li id="familles__sidebar">Espace familles</li>
+    </ul>
+    <div class="mt-8">
+      <ul class="flex gap-4">
+        <button id="change_lang__fr_sidebar" class="flex items-center gap-2 p-2 border-2 rounded">
+          <img src="./img/icons/france.png"  class="h-6" alt="french">
+            FR
+        </button>
+        <button id="change_lang__en_sidebar" class="flex items-center gap-2 p-2 border-2 rounded">
+          <img src="./img/icons/united-kingdom.png" class="h-6" alt="english">
+            EN
+        </button>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>
